@@ -1,0 +1,33 @@
+#-------------------------------
+# General Site Settings
+title: Andrea Spada, Liuteria d'Autore
+logo: logo.svg # You can add own logo.
+description: Maker and Restorer of Fine String Instruments
+
+
+#-------------------------------
+# Author Settings
+author:
+  name: Andrea Spada
+  image: 01.jpg
+  name: <strong>Andrea Spada</strong>
+  company: <em>Liuteria d'Autore</em>
+  bio: Maker and Restorer of Fine String Instruments
+
+
+#-------------------------------
+# Contact links
+#twitter: https://twitter.com/ # Add your Twitter handle
+facebook: https://facebook.com/ # Add your Facebook handle
+#dribbble: https://dribbble.com/ # Add your Dribbble handle
+instagram: https://instagram.com/ # Add your Instagram handle
+#pinterest: https://pinterest.com/ # Add your Pinterest handle
+
+#-------------------------------
+# Instagram Feed
+instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+instagram-profile: andrea.spada.liutaio # Add instagram username
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
