@@ -1,12 +1,16 @@
 en:
   label: English
   icon: 🇺🇸
+  iso: en
 es:
   label: Español
   icon: 🇪🇸
+  iso: es
 it: 
   label: Italiano
   icon: 🇮🇹
+  iso: it
 pt:
   label: Portugues
   icon: 🇵🇹
+  iso: pt

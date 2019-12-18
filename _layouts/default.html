@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+{% assign lang = site.data.languages[page.lang] %}
+<html lang="{{ lang.iso }}">
 
 {% include head.html %}
 
