@@ -125,6 +125,21 @@
   }
 }
 
+.nav__lang {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+}
+
+.nav__lang_list {
+  display: inline-flex;
+  list-style: none;
+}  
+
+.nav__lang_item {
+  margin: 5px;
+}
+
 .nav-buttons {
   position: absolute;
   top: 50%;

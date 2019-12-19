@@ -2,6 +2,7 @@
 layout: page
 title: Latest Posts
 lang: en
+lang-ref: index
 permalink: /en/
 ---
 

@@ -28,9 +28,23 @@
                 <a href="{{site.baseurl}}/" class="nav__link">Home</a>
               </li>              
             </ul>
-
           </div>
         </nav>
+
+        <div class="translations">
+          {% if page.layout != 'index' %}
+              {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+            {% endif %}
+            {% if posts.size > 1 %}
+              <nav class="nav__lang">              
+              <ul class="nav__lang_list">
+                {% for post in posts %}
+                  <li class="nav__lang_item"><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{post.lang}}">{{ post.lang }}</a></li>
+                {% endfor %}
+              </ul>
+            </nav> 
+            {% endif %}
+        </div>
 
         <div class="nav-buttons">
           <i class="nav__icon nav__icon-menu ion ion-md-menu" aria-label="Menu Icon"></i>

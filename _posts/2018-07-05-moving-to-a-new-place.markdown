@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Moving to a new place
+lang: en
+lang-ref: moving
 date:   2018-07-05 15:01:35 +0300
 image:  05.jpg
 tags:   Home

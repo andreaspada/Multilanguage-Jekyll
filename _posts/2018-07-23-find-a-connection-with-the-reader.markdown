@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  Find a connection with the reader
+lang: en
+lang-ref: find-a-connection
 date:   2018-07-24 15:01:35 +0300
 image:  02.jpg
 tags:   Resources
