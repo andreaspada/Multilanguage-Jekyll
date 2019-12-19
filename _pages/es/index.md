@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Artículos Recientes
+title: Bienvenido a mi botega!
 lang: es
 lang-ref: index
 permalink: /es/
 ---
-
-# Bienvenido a mi botega!

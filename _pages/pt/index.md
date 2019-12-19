@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Ultimos Artigos
+title: Benvindo a meu ateliê!
 lang: pt
 lang-ref: index
 permalink: /pt/
 ---
 
-# Benvindo a meu ateliê!
