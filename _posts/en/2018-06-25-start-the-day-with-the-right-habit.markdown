@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  Find a connection with the reader
+title:  Start the day with the right habit
 lang: en
-lang-ref: find-a-connection
-date:   2018-07-24 15:01:35 +0300
-image:  02.jpg
-tags:   Resources
+lang-ref: start-the-day
+categories: blog
+permalink: /en/:categories/:year/:month/:day/:title:output_ext
+date:   2018-06-25 15:01:35 +0300
+image:  06.jpg
+tags:   Style
 ---
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 

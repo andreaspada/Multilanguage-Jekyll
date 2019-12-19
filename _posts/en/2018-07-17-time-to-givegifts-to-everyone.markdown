@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  Why a brand is often important
+title:  Time to give gifts to everyone
 lang: en
-lang-ref: why-a-brand
-date:   2018-07-19 15:01:35 +0300
-image:  03.jpg
-tags:   Style
+lang-ref: time-to-give-gifts
+categories: blog
+permalink: /en/:categories/:year/:month/:day/:title:output_ext
+date:   2018-07-17 15:01:35 +0300
+image:  04.jpg
+tags:   Life
 ---
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 

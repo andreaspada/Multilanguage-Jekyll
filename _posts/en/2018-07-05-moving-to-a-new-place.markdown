@@ -3,6 +3,8 @@ layout: post
 title:  Moving to a new place
 lang: en
 lang-ref: moving
+categories: blog
+permalink: /en/:categories/:year/:month/:day/:title:output_ext
 date:   2018-07-05 15:01:35 +0300
 image:  05.jpg
 tags:   Home

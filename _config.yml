@@ -15,18 +15,22 @@ paginate_path: "/page/:num"
 
 
 # Pages Path
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      #permalink: /:basename:output_ext
-      permalink: /:categories/:title
+#defaults:
+#  - scope:
+#     path: '_pages'
+#     values:
+#        permalink: /:basename:output_ext
+ 
+
+#permalink: /:categories/:title
+
 
 include:
   - _pages
 
 # Permalinks
-permalink:        /:categories/:title
+#permalink:        /:categories/:title
+permalink: pretty
 
 # Collections
 collections:

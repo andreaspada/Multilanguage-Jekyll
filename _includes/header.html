@@ -33,17 +33,22 @@
 
         <div class="translations">
           {% if page.layout != 'index' %}
+            {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+              {% if page.layout != 'index' %}
               {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+                {% if posts.size > 1 %}
+                <nav class="nav__lang">              
+                  <ul class="nav__lang_list">
+                    {% for post in posts %}
+                      <li class="nav__lang_item">
+                        <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{post.lang}}">{{ post.lang }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </nav>               
+              {% endif %}
             {% endif %}
-            {% if posts.size > 1 %}
-              <nav class="nav__lang">              
-              <ul class="nav__lang_list">
-                {% for post in posts %}
-                  <li class="nav__lang_item"><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{post.lang}}">{{ post.lang }}</a></li>
-                {% endfor %}
-              </ul>
-            </nav> 
-            {% endif %}
+          {% endif %}          
         </div>
 
         <div class="nav-buttons">
