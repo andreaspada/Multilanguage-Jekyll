@@ -54,7 +54,7 @@ layout: default
 		<div>
 			{% for post in site.posts %}
       {% if post.lang == page.lang %}
-      {% if post.tag == 'portfolio' %}
+      {% if post.categories contains "portfolio" %}
       {% include article-content.html %}
       {% endif %}
       {% endif %}
