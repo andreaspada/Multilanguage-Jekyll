@@ -21,21 +21,23 @@
               <i class="ion ion-ios-close-circle-outline"></i>
             </div>
 
-            <div class="nav__title">Menu</div>
-
-            <ul class="nav__list list-reset">
-              <li class="nav__item">
-                <a href="{{site.baseurl}}/" class="nav__link">Home</a>
+            <div class="nav__title">Menu</div>            
+            <ul class="nav__list list-reset">              
+              <li class="nav__item">                
+                {% assign lang = site.data.languages[page.lang] %}
+                <a href="{{site.baseurl}}/{{page.lang}}" class="nav__link">Home</a>
               </li>
-              {% assign posts=site.pages | where:"lang", page.lang | sort: 'title' %}
+              {% assign posts=site.pages | where:"lang", page.lang | sort: 'title' %}              
               {% if posts.size > 1 %}              
+              
               {% for post in posts %}
               
+              {% if post.layout != 'main' %}
               <li class="nav__item">
                 <a href="{{ post.url }}" class="nav__link">{{ post.title }}</a>
               </li>
-              
-              {% endfor %}              
+              {% endif %}
+              {% endfor %}                                                        
               {% endif %}
             </ul>
           </div>

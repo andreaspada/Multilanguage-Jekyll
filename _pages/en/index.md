@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: main
 title: Welcome to my shop!
 lang: en
 lang-ref: index
