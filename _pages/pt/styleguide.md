@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Style Guide
-permalink: /styleguide/
+lang: pt
+lang-ref: styleguide
+permalink: /pt/styleguide/
 image: 08.jpg
 ---
 
