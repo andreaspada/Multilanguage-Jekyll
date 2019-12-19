@@ -1,0 +1,11 @@
+---
+layout: post
+title: This is a new article
+date: YYYY-MM-DD HH:MM
+lang: en
+lang-ref: new-article
+category: Category
+author: Andrea Spada
+tags: [tag1, tag2]
+summary: Summary of the article
+---
