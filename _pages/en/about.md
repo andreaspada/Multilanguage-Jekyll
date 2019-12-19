@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About me
 lang: en
 lang-ref: about
 permalink: /en/about/

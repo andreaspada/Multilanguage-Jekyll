@@ -25,6 +25,20 @@
   }
 }
 
+.post__box {
+  
+  .post__list {
+    display: list-item;
+    list-style: none;
+
+    .post__list-item {
+      
+    }
+  }
+}
+
+
+
 .post__info {
   display: flex;
   align-items: center;
