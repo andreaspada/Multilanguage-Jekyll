@@ -21,7 +21,7 @@ layout: default
           {% if page.tags.size >= 1 %}
           <div class="post__tags">
             {% for tag in page.tags %}
-              <a href="{{ site.baseurl }}/{{ page.lang }}/tag/{{ tag }}" class="post__tags-tag">{{ tag }}</a>
+              <a href="{{ site.baseurl }}/{{ page.lang }}/tags/{{ tag }}" class="post__tags-tag">{{ tag }}</a>
             {% endfor %}
           </div>
           {% endif %}
@@ -60,21 +60,6 @@ layout: default
       {% endif %}
 			{% endfor %}
 		</div>
-		
-		<!-- begin posts list -->
-		<!--
-		<div class="post__box">
-			<ul class="post__list">
-				{% for post in site.posts %}
-				{% if post.lang == page.lang %}
-				<li class="post__list-item">
-					<a href="{{ post.url }}">{{ post.title }}</a>
-				</li>
-				{% endif %}
-				{% endfor %}
-			</ul>
-		</div> -->
-		<!-- end posts list -->
 		
 		</article>
     <!-- end post -->
