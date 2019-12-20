@@ -20,9 +20,9 @@ include:
 permalink: pretty
 
 # Tags
-tag_page_dir:         tag
-tag_page_layout:      tag-page
-tag_permalink_style:  pretty
+#tag_page_dir:         tags
+#tag_page_layout:      tag-page
+#tag_permalink_style:  /:lang/tags/:tag
 
 sass:
   sass_dir: _sass
