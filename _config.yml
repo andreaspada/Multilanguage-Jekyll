@@ -19,11 +19,6 @@ include:
 # Permalinks
 permalink: pretty
 
-# Tags
-#tag_page_dir:         tags
-#tag_page_layout:      tag-page
-#tag_permalink_style:  /:lang/tags/:tag
-
 sass:
   sass_dir: _sass
   style: compressed
