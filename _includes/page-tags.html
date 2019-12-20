@@ -1,7 +1,7 @@
 <div clas="post__tags">
 {% if page.tags.size >= 1 %}
     {% for ptag in page.tags %}    
-        <a href="{{ site.url }}/{{ page.lang }}/tags//{{ ptag }}" class="post__tags-tag">{{ ptag }}</a>    
+        <a href="{{ site.url }}/{{ page.lang }}/tags/{{ ptag }}" class="post__tags-tag">{{ ptag }}</a>    
     {% endfor %}
 {% endif %}
 </div>
