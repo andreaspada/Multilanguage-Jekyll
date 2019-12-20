@@ -21,35 +21,48 @@
               <i class="ion ion-ios-close-circle-outline"></i>
             </div>
 
-            <div class="nav__title">Menu</div>
-
-            <ul class="nav__list list-reset">
+            <div class="nav__title">Menu</div>            
+            <ul class="nav__list list-reset">              
+              <li class="nav__item">                
+                {% assign lang = site.data.languages[page.lang] %}
+                <a href="{{site.baseurl}}/{{page.lang}}" class="nav__link">Home</a>
+              </li>
+              {% assign posts=site.pages | where:"lang", page.lang | sort: 'title' %}              
+              {% if posts.size > 1 %}              
+              
+              {% for post in posts %}
+              
+              {% if post.layout != 'main' %}
               <li class="nav__item">
-                <a href="{{site.baseurl}}/" class="nav__link">Home</a>
-              </li>              
+                <a href="{{ post.url }}" class="nav__link">{{ post.title }}</a>
+              </li>
+              {% endif %}
+              {% endfor %}                                                        
+              {% endif %}
             </ul>
           </div>
         </nav>
 
         <div class="translations">
           {% if page.layout != 'index' %}
-            {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-              {% if page.layout != 'index' %}
-              {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-                {% if posts.size > 1 %}
-                <nav class="nav__lang">              
-                  <ul class="nav__lang_list">
-                    {% for post in posts %}
-                      <li class="nav__lang_item">
-                        <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{post.lang}}">{{ post.lang }}</a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </nav>               
-              {% endif %}
-            {% endif %}
-          {% endif %}          
-        </div>
+          {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+          {% if posts.size == 0 %}
+          {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+          {% endif %}
+          {% if posts.size > 1 %}
+          <nav class="nav__lang">
+            <ul class="nav__lang_list">
+              {% for post in posts %}
+              <li class="nav__lang_item">
+                <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title=" View in
+                  {{post.lang}}">{{ post.lang }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+          {% endif %}
+          {% endif %}
+          </div>
 
         <div class="nav-buttons">
           <i class="nav__icon nav__icon-menu ion ion-md-menu" aria-label="Menu Icon"></i>

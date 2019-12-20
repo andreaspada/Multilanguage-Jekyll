@@ -1,4 +1,28 @@
 ---
 layout: index
+permalink: /
 ---
 {% include hero.html %}
+
+{% unless page.lang %}
+<script type="text/javascript">
+    $( document ).ready(function(){
+        var userLang = navigator.language || navigator.userLanguage;
+        if ((userLang == "it") || (userLang == "it-IT")) {
+            window.location.href = "{{ site.url }}/it/"
+        }
+        else if ((userLang == "es") || (userLang == "es-ES")) {
+            window.location.href = "{{ site.url }}/es/"
+        }
+        else if ((userLang == "pt") || (userLang == "pt-PT")) {
+            window.location.href = "{{ site.url }}/pt/"
+        }
+        else if ((userLang == "pt") || (userLang == "pt-BR")) {
+            window.location.href = "{{ site.url }}/pt/"
+        }
+        else {
+            window.location.href = "{{ site.url }}/en/"
+        }
+    });
+</script>
+{% endunless %}

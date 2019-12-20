@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="arhive-head">
+  <div class="container">
+    <h1 class="archive-title">Tag: <span>{{ page.title }}</span></h1>
+  </div>
+</div>
+
+<!--{% for post in page.posts %}
+  {% include article-content.html %}
+{% endfor %}-->
+
+{% if page.tag %}
+<!-- tag page -->
+{% assign posts=site.tags[page.tag] | where:"lang", page.lang %}
+{% elsif page.lang %}
+<!-- list of posts of a specific language -->
+{% assign posts=site.posts | where:"lang", page.lang %}
+{% else %}
+<!-- list of all posts -->
+{% assign posts=site.posts %}
+{% endif %}
+{% for post in posts %}
+{% if post.tags contains page.tag-ref %}
+{% if post.title != null %}
+<article>
+  {% include article-content.html %}
+</article>
+{% endif %}
+{% endif %}
+{% endfor %}
