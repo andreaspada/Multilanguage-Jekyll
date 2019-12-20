@@ -20,13 +20,9 @@ layout: default
 
           {% if page.tags.size >= 1 %}
           <div class="post__tags">
-            <!-- {% for tag in page.tags %}
+            {% for tag in page.tags %}
               <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tags-tag">{{ tag }}</a>
-            {% endfor %} -->
-            <p class="post-meta" style="text-align: justify;">              
-              {% assign tags = page.tags | sort %}
-              {% include tagcloud.html %}
-              </p>
+            {% endfor %}            
           </div>
           {% endif %}
         </div>
